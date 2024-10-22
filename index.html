@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="index.js" type="text/Javascript" /> -->
+  </head>
+  <body class="main_body red-hat-text-600">
+    <section id="mainSection" class="main_section">
+      <section class="items_main_section">
+        <h1 class="main_heading">Desserts</h1>
+        <div class="items_section">
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-waffle-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">Waffle</p>
+            <p class="item_discription .red-hat-text-700">
+              Waffle with berries
+            </p>
+            <p id="itemPrice" class="item_price">$6.50</p>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-creme-brulee-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">Creme brulee</p>
+            <p class="item_discription .red-hat-text-700">
+              Vanella Bean Creme Brulee
+            </p>
+            <a id="itemPrice" class="item_price">$16.50</a>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-macaron-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">Macron</p>
+            <p class="item_discription .red-hat-text-700">Waffle mix of five</p>
+            <a id="itemPrice" class="item_price">$3.50</a>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-tiramisu-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">tiramisu</p>
+            <p class="item_discription .red-hat-text-700">Classic tiramisu</p>
+            <a id="itemPrice" class="item_price">$2.50</a>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-baklava-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">Baklava</p>
+            <p class="item_discription .red-hat-text-700">Pistachio Baklava</p>
+            <a id="itemPrice" class="item_price">$6.50</a>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-meringue-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">Pi</p>
+            <p class="item_discription .red-hat-text-700">Lemon Meringue pi</p>
+            <a id="itemPrice" class="item_price">$6.50</a>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-cake-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">Cake</p>
+            <p class="item_discription .red-hat-text-700">Choclate Cake</p>
+            <a id="itemPrice" class="item_price">$6.50</a>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-brownie-desktop.jpg"
+              alt="Product image"
+            />
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">Brownie</p>
+            <p class="item_discription .red-hat-text-700">Brownie</p>
+            <a id="itemPrice" class="item_price">$6.50</a>
+          </div>
+          <div class="item_detail">
+            <img
+              class="item_img"
+              src="./assets/images/image-panna-cotta-desktop.jpg"
+              alt="Product image"
+            />
+            <button id="add-to-cart-button" class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>Add to cart
+            </button>
+            <p id="item" class="item_name .red-hat-text-400">panna</p>
+            <p class="item_detail .red-hat-text-700">panna cotta</p>
+            <a id="itemPrice" class="item_price">$6.50</a>
+          </div>
+        </div>
+      </section>
+      <section class="Cart_section">
+        <h1 id="cart-count" class="cart_items-number red-hat-text-700">
+          Your cart (0)
+        </h1>
+        <div id="cart-items-container">
+          <!-- <div class="first-item">
+            <p class="cart_item_name"></p>
+            <div class="item_amount">
+              <p id="total_item"></p>
+              <p id="quantity"></p>
+              <p id="total_bill"></p>
+            </div>
+            <button class="cross_button">
+              <i class="fa-solid fa-delete-left"></i>
+            </button> -->
+          <!-- </div> -->
+        </div>
+        <div class="Total_order">
+          <h2 class="Total_order_text">Total Order</h2>
+          <h2 id="Total_amount">$00.00</h2>
+        </div>
+        <div class="Delivery_note">
+          <p class="Delivery_note_text">
+            <i class="fa-solid fa-tree"></i> This is a
+            <b>Carbon Free</b> Delivery
+          </p>
+        </div>
+        <button
+          class="confirm_button"
+          onclick="openConfirmationBox() , addConfirmedItems()"
+        >
+          Confirm Order
+        </button>
+      </section>
+    </section>
+    <section class="confirmationBox" id="popup">
+      <div class="confirmationContainer">
+        <a class="confirmIcon"><i class="fa-solid fa-check"></i></a>
+        <h1 class="confirmationText">Order Confirmation</h1>
+        <p class="confirmationOrderWish">We hope you enjoy your food!</p>
+        <div id="confirmedCartItems"></div>
+        <div class="Total_order">
+          <h2 class="Total_order_text">Total Order</h2>
+          <h2 id="totalBill">$00.00</h2>
+        </div>
+        <button
+          class="confirm_button"
+          onclick="closeConfirmationBox(), window.location.reload()"
+        >
+          Start New Order
+        </button>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
